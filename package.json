@@ -1,0 +1,15 @@
+{
+  "name": "sCoolBuddy",
+  "version": "1.0.0",
+  "description": "Best School Buddy Ever",
+  "main": "index.js",
+  ,
+  "keywords": [
+    "ecosystem:phonegap",
+    "ecosystem:cordova",
+    "cordova:template",
+    "phonegap:template"
+  ],
+  "author": "Dheeraj Sharma",
+  "license": "Apache-2.0"
+}

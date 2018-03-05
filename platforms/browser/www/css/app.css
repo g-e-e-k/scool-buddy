@@ -1,0 +1,32 @@
+/* =========
+Your custom styles go here
+ ========= */
+
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body{
+font-family: 'Open Sans';
+}
+.content-block-title{
+    margin:10px;
+    padding: 10px;
+}
+
+html.ios-gt-8 .navbar .center {
+    width: 100%;
+}
+
+.navbar-fixed .page-content, .navbar-through .page-content{
+    padding-top: 0;
+}
+
+.content-block-title{
+    font-size: 15px;
+}
+
+.list-block{
+    font-size: 14px;
+    margin: 0;
+}
+
+.content-block{padding-top:7px;margin-bottom: 0}
