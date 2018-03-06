@@ -2,14 +2,10 @@
 Your custom styles go here
  ========= */
 
- @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
-body{
-font-family: 'Open Sans';
-}
 .content-block-title{
     margin:10px;
     padding: 10px;
+    text-transform: none;
 }
 
 html.ios-gt-8 .navbar .center {
@@ -29,4 +25,24 @@ html.ios-gt-8 .navbar .center {
     margin: 0;
 }
 
-.content-block{padding-top:7px;margin-bottom: 0}
+.content-block{margin: 0}
+
+.navbar + .pages{
+    margin-top: 43px;
+}
+
+.button,.button.button-big{
+    height: auto;
+    padding: 5px;
+    line-height: inherit;
+    margin-bottom: 10px;
+}
+
+.navbar + .page-content > .list-block > ul {
+    margin-top: 43px;
+}
+
+.ripple-wave {
+    position: absolute;
+    margin-top: 0 !important;
+}

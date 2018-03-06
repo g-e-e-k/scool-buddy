@@ -2,6 +2,21 @@
 Vue.use(Framework7Vue)
 
 // Init Page Components
+Vue.component('page-student', {
+  template: '#page-student'
+})
+Vue.component('page-guardian', {
+  template: '#page-guardian'
+})
+Vue.component('page-accountant', {
+  template: '#page-accountant'
+})
+Vue.component('page-faculty', {
+  template: '#page-faculty'
+})
+Vue.component('page-creator', {
+  template: '#page-creator'
+})
 Vue.component('page-about', {
   template: '#page-about'
 })
@@ -27,6 +42,26 @@ new Vue({
     /* Uncomment to enable Material theme: */
      material: true,
     routes: [
+      {
+        path: '/student/',
+        component: 'page-student'
+      },
+      {
+        path: '/guardian/',
+        component: 'page-guardian'
+      },
+      {
+        path: '/accoutant/',
+        component: 'page-accoutant'
+      },
+      {
+        path: '/faculty/',
+        component: 'page-faculty'
+      },
+      {
+        path: '/creator/',
+        component: 'page-creator'
+      },
       {
         path: '/about/',
         component: 'page-about'

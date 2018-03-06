@@ -23,9 +23,9 @@
             <!--<f7-block inner>
               <p>Left panel content goes here</p>
             </f7-block>-->
-            <f7-block-title>Welcome Dheeraj</f7-block-title>
+            <f7-block-title>sCool Buddy</f7-block-title>
             <f7-list>
-                <f7-list-item link="/about/" title="Profile" link-view="#main-view" link-close-panel></f7-list-item>
+                <f7-list-item link="/creator/" title="Login Creator" link-view="#main-view" link-close-panel></f7-list-item>
               <f7-list-item link="/about/" title="Settings" link-view="#main-view" link-close-panel></f7-list-item>
               <f7-list-item link="/form/" title="Logout" link-view="#main-view" link-close-panel></f7-list-item>
             </f7-list>
@@ -49,7 +49,7 @@
           <f7-page>
             
             <f7-block inner>
-              <p>Welcome to sCool Buddy</p>
+              <p>Welcome Dheeraj</p>
             </f7-block>
             <f7-block-title>Chats</f7-block-title>
             <f7-list>
@@ -58,16 +58,6 @@
               <f7-list-item link="/about/" title="User #03"></f7-list-item>
               <f7-list-item link="/about/" title="User #04"></f7-list-item>
               <f7-list-item link="/form/" title="User #05"></f7-list-item>
-              <f7-list-item link="/about/" title="User #06"></f7-list-item>
-              <f7-list-item link="/about/" title="User #07"></f7-list-item>
-              <f7-list-item link="/form/" title="User #08"></f7-list-item>
-              <f7-list-item link="/about/" title="User #09"></f7-list-item>
-              <f7-list-item link="/about/" title="User #10"></f7-list-item>
-              <f7-list-item link="/form/" title="User #11"></f7-list-item>
-              <f7-list-item link="/about/" title="User #12"></f7-list-item>
-              <f7-list-item link="/about/" title="User #13"></f7-list-item>
-              <f7-list-item link="/form/" title="User #14"></f7-list-item>
-              <f7-list-item link="/about/" title="User #15"></f7-list-item>
             </f7-list>
           </f7-page>
         </f7-pages>
@@ -119,15 +109,183 @@
   </div>
 
   <!-- About Page Template -->
-  <template id="page-about">
-    <f7-page>
-      <f7-navbar title="About" back-link="Back" sliding></f7-navbar>
-      <f7-block inner>
-        <p>Here is About page!</p>
-        <p>You can go <f7-link back>back</f7-link>.</p>
-        <p>Mauris posuere sit amet metus id venenatis. Ut ante dolor, tempor nec commodo rutrum, varius at sem. Nullam ac nisi non neque ornare pretium. Nulla mauris mauris, consequat et elementum sit amet, egestas sed orci. In hac habitasse platea dictumst.</p>
-        <p>Fusce eros lectus, accumsan eget mi vel, iaculis tincidunt felis. Nulla tincidunt pharetra sagittis. Fusce in felis eros. Nulla sit amet aliquam lorem, et gravida ipsum. Mauris consectetur nisl non sollicitudin tristique. Praesent vitae metus ac quam rhoncus mattis vel et nisi. Aenean aliquet, felis quis dignissim iaculis, lectus quam tincidunt ligula, et venenatis turpis risus sed lorem. Morbi eu metus elit. Ut vel diam dolor.</p>
-      </f7-block>
+  <template id="page-creator">
+      <f7-page>
+          <!-- <f7-navbar title="" back-link="Back" sliding></f7-navbar> -->
+          <f7-list>
+            <f7-list-item link="/faculty/" title="Create Faculty's Login" link-view="#main-view"></f7-list-item>
+            <f7-list-item link="/form/" title="Create Student's Login"></f7-list-item>
+            <f7-list-item link="/about/" title="Create Guardian's Login"></f7-list-item>
+            <f7-list-item link="/about/" title="Create Accountant's Login"></f7-list-item>
+          </f7-list>
+    </f7-page>
+  </template>
+
+  <template id="page-faculty">
+      <f7-page>
+          <!-- <f7-navbar title="Form" back-link="Back" sliding></f7-navbar> -->
+          <f7-block-title>Faculty Login Creator</f7-block-title>
+          <!-- <f7-navbar title="Faculty's Login Creator" back-link="Back" sliding></f7-navbar> -->
+          <f7-list form>
+              <f7-list-item>
+                  <f7-label>Subject ID</f7-label>
+                  <f7-input type="tel" placeholder="05 (Optional)"></f7-input>
+                </f7-list-item>
+                <f7-list-item>
+                    <f7-label>Subject Name</f7-label>
+                    <f7-input type="text" placeholder="English"></f7-input>
+                  </f7-list-item>
+              <f7-list-item>
+                  <f7-label>Faculty ID</f7-label>
+                <f7-input type="text" placeholder="FID-102"></f7-input>
+              </f7-list-item>
+              <f7-list-item>
+                  <f7-label>Faculty Name</f7-label>
+                  <f7-input type="text" placeholder="John"></f7-input>
+                </f7-list-item>
+              <f7-list-item>
+                  <f7-label>Password</f7-label>
+                <f7-input type="password" placeholder="aBZ#219"></f7-input>
+              </f7-list-item>
+              <f7-list-item>
+                  <f7-label>Contact</f7-label>
+                <f7-input type="tel" maxlength="10" placeholder="8950449960"></f7-input>
+              </f7-list-item>
+              <f7-list-item>
+                  <f7-label>Active</f7-label>
+                  <f7-input type="switch"></f7-input>
+                </f7-list-item>
+            </f7-list>
+            <f7-block inner>
+               <f7-button big fill color="blue">Create</f7-button>
+               <f7-button>Back</f7-button>
+              </f7-block>
+    </f7-page>
+  </template>
+
+  <template id="page-student">
+      <f7-page>
+          <!-- <f7-navbar title="Form" back-link="Back" sliding></f7-navbar> -->
+          <f7-block-title>Student Login Creator</f7-block-title>
+          <!-- <f7-navbar title="Faculty's Login Creator" back-link="Back" sliding></f7-navbar> -->
+          <f7-list form>
+              <f7-list-item>
+                  <f7-label>Student ID</f7-label>
+                  <f7-input type="tel" placeholder="05 (Optional)"></f7-input>
+                </f7-list-item>
+                <f7-list-item>
+                    <f7-label>Subject Name</f7-label>
+                    <f7-input type="text" placeholder="English"></f7-input>
+                  </f7-list-item>
+              <f7-list-item>
+                  <f7-label>Faculty ID</f7-label>
+                <f7-input type="text" placeholder="FID-102"></f7-input>
+              </f7-list-item>
+              <f7-list-item>
+                  <f7-label>Faculty Name</f7-label>
+                  <f7-input type="text" placeholder="John"></f7-input>
+                </f7-list-item>
+              <f7-list-item>
+                  <f7-label>Password</f7-label>
+                <f7-input type="password" placeholder="aBZ#219"></f7-input>
+              </f7-list-item>
+              <f7-list-item>
+                  <f7-label>Contact</f7-label>
+                <f7-input type="tel" maxlength="10" placeholder="8950449960"></f7-input>
+              </f7-list-item>
+              <f7-list-item>
+                  <f7-label>Active</f7-label>
+                  <f7-input type="switch"></f7-input>
+                </f7-list-item>
+            </f7-list>
+            <f7-block inner>
+               <f7-button big fill color="blue">Create</f7-button>
+               <f7-button>Back</f7-button>
+              </f7-block>
+    </f7-page>
+  </template>
+
+  <template id="page-faculty">
+      <f7-page>
+          <!-- <f7-navbar title="Form" back-link="Back" sliding></f7-navbar> -->
+          <f7-block-title>Faculty Login Creator</f7-block-title>
+          <!-- <f7-navbar title="Faculty's Login Creator" back-link="Back" sliding></f7-navbar> -->
+          <f7-list form>
+              <f7-list-item>
+                  <f7-label>Subject ID</f7-label>
+                  <f7-input type="tel" placeholder="05 (Optional)"></f7-input>
+                </f7-list-item>
+                <f7-list-item>
+                    <f7-label>Subject Name</f7-label>
+                    <f7-input type="text" placeholder="English"></f7-input>
+                  </f7-list-item>
+              <f7-list-item>
+                  <f7-label>Faculty ID</f7-label>
+                <f7-input type="text" placeholder="FID-102"></f7-input>
+              </f7-list-item>
+              <f7-list-item>
+                  <f7-label>Faculty Name</f7-label>
+                  <f7-input type="text" placeholder="John"></f7-input>
+                </f7-list-item>
+              <f7-list-item>
+                  <f7-label>Password</f7-label>
+                <f7-input type="password" placeholder="aBZ#219"></f7-input>
+              </f7-list-item>
+              <f7-list-item>
+                  <f7-label>Contact</f7-label>
+                <f7-input type="tel" maxlength="10" placeholder="8950449960"></f7-input>
+              </f7-list-item>
+              <f7-list-item>
+                  <f7-label>Active</f7-label>
+                  <f7-input type="switch"></f7-input>
+                </f7-list-item>
+            </f7-list>
+            <f7-block inner>
+               <f7-button big fill color="blue">Create</f7-button>
+               <f7-button>Back</f7-button>
+              </f7-block>
+    </f7-page>
+  </template>
+
+  <template id="page-faculty">
+      <f7-page>
+          <!-- <f7-navbar title="Form" back-link="Back" sliding></f7-navbar> -->
+          <f7-block-title>Faculty Login Creator</f7-block-title>
+          <!-- <f7-navbar title="Faculty's Login Creator" back-link="Back" sliding></f7-navbar> -->
+          <f7-list form>
+              <f7-list-item>
+                  <f7-label>Subject ID</f7-label>
+                  <f7-input type="tel" placeholder="05 (Optional)"></f7-input>
+                </f7-list-item>
+                <f7-list-item>
+                    <f7-label>Subject Name</f7-label>
+                    <f7-input type="text" placeholder="English"></f7-input>
+                  </f7-list-item>
+              <f7-list-item>
+                  <f7-label>Faculty ID</f7-label>
+                <f7-input type="text" placeholder="FID-102"></f7-input>
+              </f7-list-item>
+              <f7-list-item>
+                  <f7-label>Faculty Name</f7-label>
+                  <f7-input type="text" placeholder="John"></f7-input>
+                </f7-list-item>
+              <f7-list-item>
+                  <f7-label>Password</f7-label>
+                <f7-input type="password" placeholder="aBZ#219"></f7-input>
+              </f7-list-item>
+              <f7-list-item>
+                  <f7-label>Contact</f7-label>
+                <f7-input type="tel" maxlength="10" placeholder="8950449960"></f7-input>
+              </f7-list-item>
+              <f7-list-item>
+                  <f7-label>Active</f7-label>
+                  <f7-input type="switch"></f7-input>
+                </f7-list-item>
+            </f7-list>
+            <f7-block inner>
+               <f7-button big fill color="blue">Create</f7-button>
+               <f7-button>Back</f7-button>
+              </f7-block>
     </f7-page>
   </template>
 
@@ -135,7 +293,7 @@
   <template id="page-form">
     <f7-page>
       <f7-navbar title="Form" back-link="Back" sliding></f7-navbar>
-      <f7-block-title>Form</f7-block-title>
+      <f7-block-title>Create Faculty Login</f7-block-title>
       <f7-list form>
         <f7-list-item>
           <f7-label>Name</f7-label>
@@ -293,6 +451,7 @@
   <script src="js/framework7.min.js"></script>
   <script src="js/vue.min.js"></script>
   <script src="js/framework7-vue.min.js"></script>
+  <script src="js/jquery.min.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
