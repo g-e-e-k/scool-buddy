@@ -1,9 +1,15 @@
+<html class="html-ua">
 <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
         
         <style>
             @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
-                body {background:#1b69b1;margin:0;
+            .html-ua{
+                background: url('./img/bg.png') no-repeat;
+                background-size: cover;
+            }
+            
+                .ua {background:rgba(27,105,177,0.6);margin:0;
                 font-family: 'Open Sans', sans-serif;font-weight: 400;}
                 .ua-main{position: relative; top:50%;
                     width: 90%;
@@ -41,7 +47,7 @@
 
                 #btnlogin{
                     width: 100px;
-                    background: transparent;
+                    background:#1b69b1;
                     padding: 0;
                     color: rgba(255,255,255,0.7);
                     text-align: right;
@@ -66,6 +72,7 @@
             </style>
               
         </head>
+        <body class="ua">
 <div class="ua-main">
 <div>
 <input type="text" id="txtemail" placeholder="Email">
@@ -80,3 +87,5 @@
     <img src="./img/fa-right.png">
 </div>
 </div>
+</body>
+</html>
