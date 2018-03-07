@@ -1,0 +1,82 @@
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+        
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+                body {background:#1b69b1;margin:0;
+                font-family: 'Open Sans', sans-serif;font-weight: 400;}
+                .ua-main{position: relative; top:50%;
+                    width: 90%;
+                    margin: 0 auto;
+                    margin-top: -125px;
+                    }
+                .ua-main > div {position: relative;}
+                .ua-main input{
+                font-family: 'Open Sans', sans-serif;
+                background: transparent;
+                border:0;
+                width: 100%;
+                padding: 20px;
+                font-size: 16px;
+                padding-left: 25%;
+                margin-bottom: 5px;
+                background: rgba(255,255,255,1);
+                border-radius: 5px;
+                font-weight: 300;
+                box-shadow:inset 0 0 10px #808080;
+                }
+                .ua-main input:focus{
+                    outline: none;
+                }
+                #btnlogin + img,#txtpass + img,#txtemail + img{
+                    width: 15px;
+    opacity: 0.6;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background: #1b69b1;
+    padding: 20px;
+    border-radius: 5px;
+                }
+
+                #btnlogin{
+                    width: 100px;
+                    background: transparent;
+                    padding: 0;
+                    color: rgba(255,255,255,0.7);
+                    text-align: right;
+                    padding-right: 40px;
+                    padding-top: 10px;
+                    font-weight: 400;
+                    box-shadow: none;
+                    padding-bottom: 10px;
+                    border: 1px solid rgba(255,255,255,0.2);
+                    margin-top: 10px;
+                }
+                #btnlogin + img{
+                    right: 5px;
+    left: unset;
+    padding: 10px;
+    padding-left: 0px;
+    opacity: 0.8;
+    width: 12px;
+    top: 16px;
+                }
+                .ua-main > div:nth-child(3){text-align: right;}
+            </style>
+              
+        </head>
+<div class="ua-main">
+<div>
+<input type="text" id="txtemail" placeholder="Email">
+<img src="./img/fa-email.png">
+</div>
+<div>
+<input type="password" id="txtpass" placeholder="Password">
+<img src="./img/fa-key.png">
+</div>
+<div>
+    <input type="button" id="btnlogin" value="Login">
+    <img src="./img/fa-right.png">
+</div>
+</div>
